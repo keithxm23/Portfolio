@@ -130,6 +130,20 @@ text-shadow: 0 0 10px rgba(255,255,255,.25);
   margin-bottom: 0px !important;
 }
 
+/* Polaroid image frame style */
+.polaroid {
+  position: relative;
+  width: 220px;
+}
+ 
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+/* End of Polaroid style */
 
 
 /*
