@@ -1,0 +1,158 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+ 
+@media (min-width: 980px) {
+	.sitebar.navbar.navbar-fixed-top {
+		top: 40px;
+	}
+}
+ 
+@media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0px;
+	}
+}
+
+/*
+ * Homepage
+ *
+ * Tweaks to the custom homepage and the masthead (main jumbotron).
+ */
+
+ /* Masthead (headings and download button) */
+ .masthead {
+  position: relative;
+  padding: 30px 15px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.masthead h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: #fff;
+}
+.masthead .btn-outline {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px 24px;
+  font-size: 21px;
+}
+
+/* Links to project-level content like the repo, Expo, etc */
+.masthead-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  list-style: none;
+  text-align: center;
+}
+.masthead-links li {
+  display: inline;
+}
+.masthead-links li + li {
+  margin-left: 20px;
+}
+.masthead-links a {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .masthead {
+    text-align: left;
+    padding-top:    140px;
+    padding-bottom: 140px;
+  }
+  .masthead h1 {
+    font-size: 100px;
+  }
+  .masthead .lead {
+    margin-right: 25%;
+    font-size: 30px;
+  }
+  .masthead-links {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+
+.jumbotron {
+  position: relative;
+  padding: 40px 0 40px 0;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: #020031;
+  background: -moz-linear-gradient(45deg, #020031 0%, #6d3353 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353));
+  background: -webkit-linear-gradient(45deg, #020031 0%,#6d3353 100%);
+  background: -o-linear-gradient(45deg, #020031 0%,#6d3353 100%);
+  background: -ms-linear-gradient(45deg, #020031 0%,#6d3353 100%);
+  background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+  -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+  box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+.jumbotron:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+  opacity: .4;
+}
+
+/* End of jumbotron and masthead styles */
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages, save the homepage.
+ */
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-links {
+  margin: 10px 0;
+  padding-left: 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .bs-footer {
+    text-align: left;
+  }
+  .bs-footer p {
+    margin-bottom: 0;
+  }
+}
